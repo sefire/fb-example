@@ -40,6 +40,8 @@ public class ApplicationTest {
     @Autowired
     private MockMvc mockMvc;
 
+	
+	//new comment
     @Test
     public void homePageRedirects() throws Exception {
         mockMvc.perform(get("/")).andExpect(status().is3xxRedirection())
